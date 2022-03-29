@@ -5,64 +5,122 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		body {
+		  font-family: "Lato", sans-serif;
+		}
+		
+		.sidenav {
+		  width: 130px;
+		  position: fixed;
+		  z-index: 1;
+		  top: 20px;
+		  left: 10px;
+		  background: rgba(238, 238, 238, 0.267);
+		  overflow-x: hidden;
+		  padding: 8px 0;
+		}
+		
+		.sidenav a {
+		  padding: 6px 8px 6px 16px;
+		  text-decoration: none;
+		  font-size: 18px;
+		  color: #2196F3;
+		  display: block;
+		}
+		
+		.sidenav a:hover {
+		  color: #064579;
+		}
+		
+		.main {
+		  margin-left: 140px; /* Same width as the sidebar + left position in px */
+		  font-size: 28px; /* Increased text to enable scrolling */
+		  padding: 0px 10px;
+		}
+		
+		@media screen and (max-height: 450px) {
+		  .sidenav {padding-top: 15px;}
+		  .sidenav a {font-size: 18px;}
+		}
+		</style>
 </head>
 <body>
-	
-	<div class="lines">
-		<div class="line"></div>
-		<div class="line"></div>
-		<div class="line"></div>
-	  </div>
-	
-	<!--video slider start-->
-	<div class="slider">
-		<div class="slides">
-			<!--radio buttons start-->
-			<input type="radio" name="radio-btn" id="radio1">
-			<input type="radio" name="radio-btn" id="radio2">
-			<input type="radio" name="radio-btn" id="radio3">
-			<input type="radio" name="radio-btn" id="radio4">
-			<!--radio buttons end-->
+
+	<div class="sidenav">
+		<a href="#animations">My Animations</a>
+		<a href="#about">About Me</a>
+	</div>
+<!-- 	
+		<div id="mySidenav" class="sidenav">
+			<a href="#slider">My Animations</a>
+			<a href="#portfolio">About Me</a>
+		</div>
+		 -->
 
 
-<!--///////////////////////////////////////////////////////////////////////////////////////////////-->
-			<!--slide video start-->
-			<div class="slide first">
-				<video controls autoplay muted loop src="FIRST_RENDER.mp4" width="500"> 1</video>
+<div>	
+		<!--video slider start-->
+		<div class="slider" id="animations">
+			<div class="slides">
+				<!--radio buttons start-->
+				<input type="radio" name="radio-btn" id="radio1">
+				<input type="radio" name="radio-btn" id="radio2">
+				<input type="radio" name="radio-btn" id="radio3">
+				<input type="radio" name="radio-btn" id="radio4">
+				<!--radio buttons end-->
+
+
+	<!--///////////////////////////////////////////////////////////////////////////////////////////////-->
+				<!--slide video start-->
+				<div class="slide first">
+					<video controls autoplay muted loop src="FIRST_RENDER.mp4" width="500"> 1</video>
+				</div>
+	<!--///////////////////////////////////////////////////////////////////////////////////////////////-->
+				<div class="slide second">
+					<video controls autoplay muted loop src="sun-render.mp4" width="500"> 2</video>
+				</div>
+	<!--///////////////////////////////////////////////////////////////////////////////////////////////-->
+				<div class="slide third">
+					<video controls autoplay muted loop src="Moon_render.mp4" width="500"> 1</video>
+				</div>
+	<!--///////////////////////////////////////////////////////////////////////////////////////////////-->
+				<div class="slide fourth">
+					<center>
+					<img src="19-3-22.JPG" width="500">
+					</center>
+				</div>
+	<!--///////////////////////////////////////////////////////////////////////////////////////////////-->
+		<!-- automatic navigation start-->
+			<div class="navigation-auto">
+				<div class="auto-btn1"></div>
+				<div class="auto-btn2"></div>
+				<div class="auto-btn3"></div>
+				<div class="auto-btn4"></div>
 			</div>
-<!--///////////////////////////////////////////////////////////////////////////////////////////////-->
-			<div class="slide second">
-				<video controls autoplay muted loop src="sun-render.mp4" width="500"> 2</video>
+		<!-- automatic navigation end-->
 			</div>
-<!--///////////////////////////////////////////////////////////////////////////////////////////////-->
-			<div class="slide third">
-				<video controls autoplay muted loop src="Moon_render.mp4" width="500"> 1</video>
-			</div>
-<!--///////////////////////////////////////////////////////////////////////////////////////////////-->
-			<div class="slide fourth">
-				<center>
-				<img src="19-3-22.JPG" width="500">
-				</center>
-			</div>
-<!--///////////////////////////////////////////////////////////////////////////////////////////////-->
-	<!-- automatic navigation start-->
-		<div class="navigation-auto">
-			<div class="auto-btn1"></div>
-			<div class="auto-btn2"></div>
-			<div class="auto-btn3"></div>
-			<div class="auto-btn4"></div>
+		<!-- manual navigation start-->
+		<div class="navigation-manual">
+			<label for="radio1" class="manual-btn"></label>
+			<label for="radio2" class="manual-btn"></label>
+			<label for="radio3" class="manual-btn"></label>
+			<label for="radio4" class="manual-btn"></label>
 		</div>
-	<!-- automatic navigation end-->
+		<!-- manual navigation end-->
 		</div>
-	<!-- manual navigation start-->
-	<div class="navigation-manual">
-		<label for="radio1" class="manual-btn"></label>
-		<label for="radio2" class="manual-btn"></label>
-		<label for="radio3" class="manual-btn"></label>
-		<label for="radio4" class="manual-btn"></label>
+		<br>
+		<!--video slider end-->
+	<div class="portfolio" id="about">
+		
+		<center><p id="P-title">About me:</p><br></center>
+	<div class="paragraph-div">
+		<p id="paragraph">Im a 20 year old, who wanted to learn 3d animation since forever, and I took it upon myself to do that by looking through  </p>
+		<p id="paragraph"> the internet and some online courses and now I'm in the IAC college pursuing my dream.</p>
+		<p id="paragraph">I'll be adding more animations they are in the work at the moment and I might also add the "In-Progress" tab</p>
 	</div>
-	<!-- manual navigation end-->
 	</div>
-	<!--video slider end-->
+</div>		
+<p></p>
 </body>
 </html>
