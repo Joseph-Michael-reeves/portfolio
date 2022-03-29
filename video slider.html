@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+	<div class="lines">
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+	  </div>
+	
+	<!--video slider start-->
+	<div class="slider">
+		<div class="slides">
+			<!--radio buttons start-->
+			<input type="radio" name="radio-btn" id="radio1">
+			<input type="radio" name="radio-btn" id="radio2">
+			<input type="radio" name="radio-btn" id="radio3">
+			<input type="radio" name="radio-btn" id="radio4">
+			<!--radio buttons end-->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////////////-->
+			<!--slide video start-->
+			<div class="slide first">
+				<video controls autoplay muted loop src="FIRST_RENDER.mp4" width="500"> 1</video>
+			</div>
+<!--///////////////////////////////////////////////////////////////////////////////////////////////-->
+			<div class="slide second">
+				<video controls autoplay muted loop src="sun-render.mp4" width="500"> 2</video>
+			</div>
+<!--///////////////////////////////////////////////////////////////////////////////////////////////-->
+			<div class="slide third">
+				<video controls autoplay muted loop src="Moon_render.mp4" width="500"> 1</video>
+			</div>
+<!--///////////////////////////////////////////////////////////////////////////////////////////////-->
+			<div class="slide fourth">
+				<center>
+				<img src="19-3-22.JPG" width="500">
+				</center>
+			</div>
+<!--///////////////////////////////////////////////////////////////////////////////////////////////-->
+	<!-- automatic navigation start-->
+		<div class="navigation-auto">
+			<div class="auto-btn1"></div>
+			<div class="auto-btn2"></div>
+			<div class="auto-btn3"></div>
+			<div class="auto-btn4"></div>
+		</div>
+	<!-- automatic navigation end-->
+		</div>
+	<!-- manual navigation start-->
+	<div class="navigation-manual">
+		<label for="radio1" class="manual-btn"></label>
+		<label for="radio2" class="manual-btn"></label>
+		<label for="radio3" class="manual-btn"></label>
+		<label for="radio4" class="manual-btn"></label>
+	</div>
+	<!-- manual navigation end-->
+	</div>
+	<!--video slider end-->
+</body>
+</html>
